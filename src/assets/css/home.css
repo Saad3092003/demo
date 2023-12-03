@@ -1,0 +1,80 @@
+@import url(../../App.css);
+
+.home-slide .slick-prev,
+.home-slide .slick-next {
+    font-size: initial;
+    line-height: initial;
+    position: absolute;
+    top: 50%;
+    display: block;
+    /* background-color: black; */
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    /* color: red; */
+    border: none;
+    z-index: 99;
+    outline: none;
+    /* background: red; */
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+}
+
+.home-slide .slick-prev::before,
+.home-slide .slick-next::before {
+    content: '';
+}
+
+.home-slide .slick-next {
+    right: 60px;
+}
+
+.home-slide .slick-prev {
+    left: 20px;
+}
+
+.home-slide-btn {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 10px 1px rgba(222, 222, 222, 0.838)
+}
+
+.home-banner-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-weight: 900;
+}
+
+.home-banner-text h1 {
+    font-weight: 700;
+}
+
+.slider-img {
+    height: 65svh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.glass-home {
+    background-color: #00000062;
+    backdrop-filter: blur(3px);
+}
+
+@media (max-width:991.5px) {
+    .slider-img {
+        height: 50svh;
+    }
+}

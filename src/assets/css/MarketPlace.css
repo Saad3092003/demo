@@ -1,0 +1,29 @@
+.service-icon-box {
+    padding: 10px;
+    display: grid;
+    text-align: center;
+    place-items: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.sliderProfile img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.RwProfile img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.chatbox{
+    height: 250px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}

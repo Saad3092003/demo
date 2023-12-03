@@ -1,0 +1,57 @@
+.main-slide .slick-prev,
+.main-slide .slick-next {
+    font-size: initial;
+    line-height: initial;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    z-index: 99;
+    outline: none;
+}
+
+.main-slide .slick-prev::before,
+.main-slide .slick-next::before {
+    content: '';
+}
+
+.main-slide .slick-next {
+    right: 20px;
+}
+
+.main-slide .slick-prev {
+    left: -10px;
+}
+
+.account-bg {
+    background-image: url(../../components/images/account-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.showcase-thumb {
+    position: relative;
+    height: 20rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.showcase-thumb:hover img {
+    transform: scale(1.12);
+}
+
+.showcase-thumb>div {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.74);
+    width: 100%;
+    padding: 10px 25px;
+    z-index: 99;
+}

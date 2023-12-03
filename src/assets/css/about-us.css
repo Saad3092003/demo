@@ -1,0 +1,26 @@
+@import url(../../App.css);
+
+.aboutimg {
+    height: 36rem;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.aboutimg img {
+    height: 36rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    object-position: top;
+}
+
+.aboutimg::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    right: -2rem;
+    width: 40vw;
+    height: 25rem;
+    z-index: 9;
+    background-color: #DDF1C2;
+}

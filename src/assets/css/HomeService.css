@@ -1,0 +1,81 @@
+@import url(../../App.css);
+
+.HSM-cat-box {
+    background: var(--bg-pink-shade-light);
+    width: 50px;
+    height: 50px;
+    padding: 11px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+
+}
+
+.HSM-cat:hover .HSM-cat-box {
+    border: 2px solid var(--primary-color);
+    scale: 1.2;
+}
+
+.HSM-cat.tag .HSM-cat-box {
+    border: 2px solid var(--primary-color) !important;
+    scale: 1.2;
+}
+
+.home-slide .slick-prev,
+.home-slide .slick-next {
+    font-size: initial;
+    line-height: initial;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    z-index: 99;
+    outline: none;
+}
+
+.home-slide .slick-prev::before,
+.home-slide .slick-next::before {
+    content: '';
+}
+
+.home-slide .slick-next {
+    right: 60px;
+}
+
+.home-slide .slick-prev {
+    left: 20px;
+}
+
+.home-slide-btn {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 10px 1px rgba(222, 222, 222, 0.838)
+}
+
+.slider-img {
+    height: 65svh;
+    object-fit: cover;
+    object-position: left;
+}
+
+@media (max-width:991.5px) {
+    .slider-img {
+        height: 50svh;
+    }
+}
+
+.pill-rate {
+    background-color: var(--pill-color) !important;
+    color: white !important;
+}
+
+.pill-rate:active {
+    border-color: var(--pill-color) !important;
+    background-color: var(--pill-color) !important;
+    color: white !important;
+}

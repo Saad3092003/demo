@@ -1,0 +1,163 @@
+@import url(../../App.css);
+
+#account-tab .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.shadow-tab {
+    box-shadow: 0 0 10px 1px rgb(223, 221, 221);
+}
+
+.account-bg {
+    background-image: url(../../components/images/account-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fs-7-5 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.drag {
+    display: grid;
+    place-items: center;
+    border: 2px dashed rgb(201, 200, 200);
+}
+
+.account-icons {
+    background-color: #fff5f5;
+}
+
+.account-icon-box {
+    background-color: #ffeaea;
+    padding: 10px;
+    display: grid;
+    text-align: center;
+    place-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.pfp {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.pfp img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.t-p-box {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+}
+
+.rating:not(:checked)>input {
+    position: absolute;
+    appearance: none;
+}
+
+.rating:not(:checked)>label {
+    float: right;
+    cursor: pointer;
+    font-size: 35px;
+    color: #666;
+}
+
+.rating:not(:checked)>label:before {
+    content: '★';
+}
+
+.rating>input:checked+label:hover,
+.rating>input:checked+label:hover~label,
+.rating>input:checked~label:hover,
+.rating>input:checked~label:hover~label,
+.rating>label:hover~input:checked~label {
+    color: #6d9f27;
+}
+
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color: #6d9f27;
+}
+
+.rating>input:checked~label {
+    color: var(--primary-color);
+}
+
+/* title */
+title{
+position: absolute;
+width: 809px;
+height: 30px;
+left: 612px;
+top: 362px;
+}
+
+
+/* Edit profile */
+.Edit-Profile{
+position: absolute;
+width: 63px;
+height: 18px;
+left: 612px;
+top: 362px;
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height */
+text-transform: capitalize;
+}
+.Common {
+color: #2B2B2B;
+
+opacity: 0.4;
+}
+
+
+
+/* Rectangle 46 */
+/* 
+position: absolute;
+width: 809px;
+height: 1px;
+left: 612px;
+top: 391px; */
+
+/* black */
+.black{
+background: #171717;
+opacity: 0.05;
+}
+
+/* Change password */
+.change-password{
+position: absolute;
+width: 111px;
+height: 18px;
+left: 1308px;
+top: 362px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height */
+text-align: right;
+text-transform: capitalize;
+
+color: #FEBB59;
+}

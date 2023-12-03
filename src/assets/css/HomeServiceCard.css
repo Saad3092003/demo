@@ -1,0 +1,41 @@
+@import url(../../App.css);
+
+.img-box {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.slider-card {
+    background-color: white;
+}
+
+.slider-card:hover img {
+    transform: scale(1.1);
+}
+
+.img-box div {
+    z-index: 3;
+}
+
+.pill-rate {
+    background-color: var(--pill-color) !important;
+    color: white !important;
+}
+
+.pill-rate:active {
+    border-color: var(--pill-color) !important;
+    background-color: var(--pill-color) !important;
+    color: white !important;
+}

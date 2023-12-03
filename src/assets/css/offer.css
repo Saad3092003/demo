@@ -1,0 +1,20 @@
+@media (max-width:992.5px) {
+
+    .bg-offer-banner {
+        background-position: right;
+    }
+}
+
+.bg-offer-banner {
+    /* background-image: url(../../components/images/offer-bg.png); */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:992.5px) {
+
+    .bg-offer-banner {
+        background-position: right;
+    }
+}

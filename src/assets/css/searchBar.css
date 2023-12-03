@@ -1,0 +1,21 @@
+.search-box {
+    padding: 25px 25px;
+    box-shadow: 0 3px 15px 1px rgba(219, 219, 219, 0.656);
+    width: 70vw;
+    margin-top: -2.5rem;
+    position: relative;
+    z-index: 99;
+}
+
+.search-box .form-control:focus {
+    box-shadow: none;
+    background-color: var(--bg-light2);
+}
+
+.search-box .form-control {
+    font-size: 15px;
+}
+
+.search-box .form-control::placeholder {
+    font-size: 15px;
+}

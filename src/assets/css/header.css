@@ -1,0 +1,264 @@
+@import url(../../App.css);
+
+.top-head {
+    background-color: #5e455a;
+}
+
+#main-nav .nav-item .nav-link {
+    font-weight: 500;
+}
+
+.Lalert {
+    animation: fadescalein 0.5s ease;
+}
+
+.bell-cover:hover .bell {
+    animation: bellRing 0.9s both;
+}
+
+/* bell ringing animation keyframes*/
+@keyframes bellRing {
+
+    0%,
+    100% {
+        transform-origin: top;
+    }
+
+    15% {
+        transform: rotateZ(10deg);
+    }
+
+    30% {
+        transform: rotateZ(-10deg);
+    }
+
+    45% {
+        transform: rotateZ(5deg);
+    }
+
+    60% {
+        transform: rotateZ(-5deg);
+    }
+
+    75% {
+        transform: rotateZ(2deg);
+    }
+}
+
+
+@keyframes fadescalein {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@media (min-width:991.5px) {
+    #main-nav .nav-item .nav-link {
+        transition: all 0.5s;
+    }
+
+    #main-nav .nav-item:hover .nav-link {
+        letter-spacing: 1.5px;
+    }
+}
+
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item.active {
+    background-color: var(--primary-color);
+}
+
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.btn-close-red {
+    color: red;
+    font-size: 25px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.or {
+    margin-top: -1.3rem;
+    width: min-content;
+}
+
+.check {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+}
+
+.check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+}
+
+.check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+
+#cbx {
+    display: none;
+}
+
+.check:hover svg {
+    stroke: #4285f4;
+}
+
+#cbx:checked+.check svg {
+    stroke: #4285f4;
+}
+
+#cbx:checked+.check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#cbx:checked+.check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+.fblogin-icon {
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.notification {
+    width: 18rem;
+    max-height: 18rem;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+.readed {
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    height: 32px;
+    scale: 0.9;
+    display: grid;
+    place-items: center;
+    margin-top: 2px;
+}
+
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #7ac142;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 2% auto;
+    scale: 1.5;
+    box-shadow: inset 0px 0px 0px #7ac142;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #7ac142;
+    }
+}
+
+.notification .dropdown-item:hover .readed {
+    opacity: 1;
+}
+
+.notification .dropdown-item:hover {
+    background-color: white;
+}
+
+.notification .dropdown-item {
+    padding-block: 7px;
+}
+
+.notification .dropdown-item:active {
+    background-color: white;
+    color: black;
+}
+
+.notification>* {
+    text-wrap: wrap;
+}
+
+.navbar .navbar-brand {
+    width: 7rem;
+}
+
+@media (max-width:500px) {
+    .notification {
+        width: 15rem;
+    }
+
+    .navbar .navbar-brand {
+        width: 5rem;
+    }
+}
